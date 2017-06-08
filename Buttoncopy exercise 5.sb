@@ -1,0 +1,28 @@
+
+GraphicsWindow.BackgroundColor = GraphicsWindow.GetRandomColor()
+GraphicsWindow.Width = 500
+GraphicsWindow.Height = 500
+ 
+Controls.ButtonClicked = buttonclicked
+closebutton = Controls.AddButton("Copy file.", 225, 250)
+
+sub buttonclicked 
+ lastbutton = Controls.LastClickedButton
+  If lastbutton = closebutton Then
+  copyfile()
+Endif   
+EndSub
+Sub copyfile
+  If (Clock.Hour > 5) Then
+   File.CopyFile("C:\Users\Student\Desktop\folder1\hello world pause().sb", "C:\Users\Student\Desktop\folder2")
+ElseIf (Clock.Hour < 17) then
+   File.CopyFile("C:\Users\Student\Desktop\folder1\hello world pause().sb", "C:\Users\Student\Desktop\folder2")
+EndIf 
+EndSub
+
+ 
+ 
+
+
+
+

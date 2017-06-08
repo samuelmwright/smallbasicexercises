@@ -1,0 +1,12 @@
+Start:
+TextWindow.WriteLine("Are you ready to copy file?")
+answer = TextWindow.Read()
+If answer = "yes" Then
+  File.CopyFile("C:\Users\Student\Desktop\folder1\hello world pause().sb", "C:\Users\Student\Desktop\folder2")
+ElseIf answer = "no" then
+ 
+  TextWindow.WriteLine("Will wait to copy.")
+Goto start
+EndIf
+
+

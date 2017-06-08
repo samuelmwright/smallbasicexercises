@@ -1,0 +1,22 @@
+
+TextWindow.WriteLine("The current date and time is: " + Clock.Date +".")
+TextWindow.WriteLine("The current time is: " + Clock.Time + " Pacific time.")
+TextWindow.WriteLine("Current branch: Portland")
+If (Clock.Hour < 6) then 
+  TextWindow.WriteLine("New York branch is closed.")
+ElseIf (Clock.Hour > 24) then
+  Textwindow.writeline("New York branch is closed.")
+Else
+  TextWindow.WriteLine("New York branch is open.")
+EndIf
+If (Clock.Hour > 5) Then
+  TextWindow.WriteLine("London branch is closed.")
+   File.CopyFile("C:\Users\Student\Desktop\folder1\hello world pause().sb", "C:\Users\Student\Desktop\folder2")
+ElseIf (Clock.Hour < 17) then
+  TextWindow.writeline("London branch is closed.")
+   File.CopyFile("C:\Users\Student\Desktop\folder1\hello world pause().sb", "C:\Users\Student\Desktop\folder2")
+Else 
+  TextWindow.WriteLine("London branch is open.")
+EndIf 
+
+  

@@ -1,0 +1,10 @@
+TextWindow.WriteLine("Please enter a number:")
+number_1 = TextWindow.Read()
+TextWindow.WriteLine("Please enter another number:")
+number_2 = TextWindow.Read()
+If number_1 < number_2 Then
+  TextWindow.Write("of the numbers you entered: " + number_1 + " is the smallest.")
+Else
+  TextWindow.Writeline("of the numbers you enters: " + number_2 + " is the smallest.")
+EndIf
+  
